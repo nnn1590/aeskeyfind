@@ -5,7 +5,8 @@ all: aeskeyfind
 
 aeskeyfind: $(OBJS)
 	$(CC) -o aeskeyfind $(OBJS)
+	ndk-build
 
 clean:
 	@rm -f aeskeyfind *~ \#* $(OBJS)
-
+	ndk-build clean
